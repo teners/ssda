@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharding</title>
+    <link rel="stylesheet" href="{{ static_url('bootstrap.min.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ static_url('style.css') }}" type="text/css">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="masthead">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+            </ul>
+            <h3 class="muted">Sharding</h3>
+        </div>
+        <hr>
+        <form class="form-bg" action="user?id=" method="get">
+            <h2 class="form-signin-heading">Input user ID</h2>
+            <div class="form-group">
+                <input type="text" class="form-control" autofocus autocomplete="off" placeholder="User ID" name="id">
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">Go</button>
+        </form>
+    </div>
+    <script src="{{ static_url('jquery.min.js') }}"></script>
+    <script src="{{ static_url('bootstrap.min.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ static_url('bootstrap.min.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ static_url('style.css') }}" type="text/css">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Search</a></li>
+        </ul>
+        <h3 class="muted">Sharding</h3>
+        </div>
+        <hr>
+        <div class="show-grid row">
+            <div class="well col-md-offset-1 col-sm-6">
+                <h3>{{ title }}</h3>
+                <dl class="dl-horizontal">
+                  <dt>Age</dt>
+                  <dd>{{ age }}</dd>
+                  <dt>City</dt>
+                  <dd>{{ city }}</dd>
+                  <dt>Info</dt>
+                  <dd>{{ info }}</dd>
+                </dl>
+            </div>
+            <div class="well col-sm-4">
+            </div>
+        </div>
+    </div>
+    <script src="{{ static_url('jquery.min.js') }}"></script>
+    <script src="{{ static_url('bootstrap.min.js') }}"></script>
+</body>
+</html>
