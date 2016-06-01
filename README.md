@@ -26,4 +26,4 @@ User profile (after Redis)
 Search fields
 ![Search](http://i.imgur.com/hDsCQCL.png?1)
 Search results
-![Search result](http://i.imgur.com/hDsCQCL.png?1)
+![Search result](http://i.imgur.com/YMGo44Y.png?1)
