@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+    <link rel="stylesheet" href="{{ static_url('bootstrap.min.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ static_url('style.css') }}" type="text/css">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/">Home</a></li>
+            <li><a href="search">Search</a></li>
+        </ul>
+        <h3 class="muted">Sharding <span class="label label-primary">{% if results == True%} {{ time }}s {% else %} beta {% end %}</span></h3>
+        </div>
+        <hr>
+        {% if results == False %}
+        <div class="alert alert-danger" role="alert">Nothing was found!</div>
+        {% else %}
+        <div class="jumbotron">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4>Results</h4>
+                </div>
+                <ul class="list-group">
+                    {% for r in result %}
+                        <li class="list-group-item">
+                            <a href="/user?id={{ r.id }}" class="list-group-item">{{ r.name }}</a>
+                        </li>
+                    {% end %}
+                </ul>
+            </div>
+        </div>
+        {% end %}
+    </div>
+    <script src="{{ static_url('jquery.min.js') }}"></script>
+    <script src="{{ static_url('bootstrap.min.js') }}"></script>
+</body>
+</html>

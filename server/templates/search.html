@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search</title>
+    <link rel="stylesheet" href="{{ static_url('bootstrap.min.css') }}" media="screen">
+    <link rel="stylesheet" href="{{ static_url('style.css') }}" type="text/css">
+    <link rel="icon" href="{{ static_url('favicon.ico') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li><a href="/">Home</a></li>
+            <li class="active"><a href=".">Search</a></li>
+        </ul>
+        <h3 class="muted">Sharding</h3>
+        </div>
+        <hr>
+        <form class="form-horizontal" action="results" method="get" id="form" onsubmit="return nonEmpty()">
+            <div class="form-group">
+                <label for="firstname" class="col-md-offset-3 col-sm-2 control-label">First name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="firstname" placeholder="John" autofocus autocomplete="off" name="firstname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="lastname" class="col-md-offset-3 col-sm-2 control-label">Last name</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="lastname" placeholder="Doe" autocomplete="off" name="lastname">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="city" class="col-md-offset-3 col-sm-2 control-label">City</label>
+                <div class="col-sm-3">
+                    <input type="text" class="form-control" id="city" placeholder="Saint-Petersburg" autocomplete="off" name="city">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="agefrom" class="col-md-offset-3 col-md-2 control-label">Age</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="agefrom" placeholder="18" autocomplete="off" name="agefrom">
+                </div>
+                <label for="ageto" class="col-md-1 control-label style='text-align: center;'">to</label>
+                <div class="col-md-1">
+                    <input type="text" class="form-control" id="ageto" placeholder="45" autocomplete="off" name="ageto">
+                </div>
+            </div>
+            <div class="col-md-offset-4 col-md-4">
+                <button class="btn btn-primary btn-block" type="submit">Go</button>
+            </div>
+        </form>
+        <br><br><br>
+        <div class="alert alert-danger" role="alert" style="display: none" id="warning">Fill at least one field!</div>
+    </div>
+    <script src="{{ static_url('formvalidate.js') }}"></script>
+    <script src="{{ static_url('jquery.min.js') }}"></script>
+    <script src="{{ static_url('bootstrap.min.js') }}"></script>
+</body>
+</html>
