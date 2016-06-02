@@ -37,4 +37,4 @@ Search fields
 
 Search results
 
-![Search result](http://i.imgur.com/MfjhQ9O.png?1)
+![Search result](http://i.imgur.com/MfjhQ9O.png)
