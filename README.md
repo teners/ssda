@@ -21,11 +21,15 @@ __sphinx__ just contains Sphinx config file, but it apparently has to be somewhe
 ##Screenshots
 Main page, here you can open user's page by it's ID
 ![Main page](http://i.imgur.com/q8OT6wA.png?1)
+
 User profile (before Redis)
 ![Profile](http://i.imgur.com/uG8bLhF.png?1)
+
 User profile (after Redis)
-![Profile Redis](http://i.imgur.com/YMGo44Y.png?1)
+![Profile Redis](http://i.imgur.com/KbUcWHy.png?1)
+
 Search fields
 ![Search](http://i.imgur.com/dI2Dfuz.png?1)
+
 Search results
 ![Search result](http://i.imgur.com/MfjhQ9O.png?1)
